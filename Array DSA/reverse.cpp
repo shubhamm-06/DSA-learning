@@ -1,3 +1,5 @@
+//Q Reverse the array A.
+
 #include <iostream>  
 using namespace std;  
   
