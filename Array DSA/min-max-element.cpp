@@ -1,3 +1,4 @@
+// Q Find the minimum and maximum element of the array arr[].
 #include <bits/stdc++.h>
 using namespace std;
 
