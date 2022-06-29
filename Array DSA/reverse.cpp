@@ -1,27 +1,29 @@
-#include <iostream>  
-using namespace std;  
-  
-int main ()  
-{  
-    int arr[50], num, temp, i, j;  
-    cin >> num;  
-      
-    // use for loop to enter the numbers   
-    for (i = 0; i < num; i++)  
-    {  
-        cin >> arr[i];  
-    }  
-      
-      
-    for ( i = 0, j = num - 1; i < num/2; i++, j--)  
-    {     
-        temp = arr[i];  
-        arr[i] = arr[j];  
-        arr[j] = temp;  
-    }  
-    for ( i = 0; i < num; i++)  
-    {  
-        cout << arr[i] << " ";  
-    }  
-    return 0;  
-} 
+//Q Reverse the array A.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int reverse(int arr[], int n){
+    int i,j;
+    for(int i=0, j=n-1; i<n/2; i++, j--){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    for(int i=0; i<n; i++){
+        cout << arr[i] << " ";
+    }
+}
+
+
+int main()
+{
+	int n;
+    cin >> n;
+    int arr[n];
+    for(int i=0; i<n; i++){
+        cin >> arr[i];
+    }
+	cout << reverse(arr, n);
+	return 0;
+}
