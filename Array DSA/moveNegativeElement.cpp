@@ -6,6 +6,7 @@ using namespace std;
 void rearrangeElements(int arr[], int n)
 {
 	int temp[n];
+	int j=0;
 	for (int i = 0; i < n ; i++)
 		if (arr[i] >= 0 )
 			temp[j++] = arr[i];
@@ -22,7 +23,7 @@ void rearrangeElements(int arr[], int n)
 
 int main()
 {
-	int arr[] = {1 ,-1 ,-3 , -2, 7, 5, 11, 6 };
+	int arr[] = {11 ,-134 ,-3 , -22, 7, 5, 4114, -46 };
 	int n = sizeof(arr)/sizeof(arr[0]);
 
 	rearrangeElements(arr, n);
