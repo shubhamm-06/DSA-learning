@@ -1,42 +1,35 @@
-// Code to initialize a linked list and print it.
-
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-
-
-class Node
-{
+class Node {
 public:
     int data;
-    Node *next;
+    Node* next;
 };
-
-void printList(Node *n)
+void display(Node* n)
 {
-    while(n != NULL)
-        cout << n->data << " ";
-        n = n->next;
+	while (n != NULL) {
+		cout << n->data << " ";
+		n = n->next;
+	}
 }
-
-int main()
-{
-    Node *head = NULL;
-    Node *second = NULL;
-    Node *third = NULL;
+int main(){
+    Node* head = NULL;
+    Node* second= NULL ;
+    Node* third= NULL;
 
     head = new Node();
     second = new Node();
     third = new Node();
 
-    head->data = 1;
-    head->next = second;
+    head->data = 56;
+    head-> next = second;
 
-    second->data = 3;
-    second->next = third;
+    second -> data = 66;
+    second -> next = third;
 
-    third->data = 5;
-    third->next = NULL;
+    third -> data = 76;
+    third -> next = NULL;
 
-    printList(head);
+    display(head); 
     return 0;
 }
