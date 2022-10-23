@@ -1,35 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Node {
-public:
+class Node
+{
+    public:
     int data;
     Node* next;
 };
-void display(Node* n)
-{
-	while (n != NULL) {
-		cout << n->data << " ";
-		n = n->next;
-	}
+void display(Node* n){
+    while(n != NULL){
+        cout << n->data << " ";
+        n = n-> next;
+    }
 }
 int main(){
     Node* head = NULL;
-    Node* second= NULL ;
-    Node* third= NULL;
+    Node* second = NULL;
+    Node* third = NULL;
 
     head = new Node();
     second = new Node();
     third = new Node();
 
-    head->data = 56;
-    head-> next = second;
+    head -> data = 12;
+    head -> next = second;
 
-    second -> data = 66;
+    second -> data = 45;
     second -> next = third;
 
-    third -> data = 76;
+    third -> data = 66;
     third -> next = NULL;
 
-    display(head); 
-    return 0;
+    display(head);
 }
